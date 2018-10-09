@@ -1,3 +1,32 @@
+# terraform-azurerm-disk-snapshot
+
+
+## Snapshot one or more managed disks 
+    This module helps create a disk backup by creating a snahpsot. You can also specify multiple disk names in the same resource group in a list format. 
+
+## Usage
+
+
+```hcl
+module "disksnapshot" {
+  source               = "Azure/disk-snapshot/azurerm"
+  resource_group_name  = "resourcegroup1"
+  version              = "1.0"
+  managed_disk_names   = ["disk1", "disk2"]
+
+  tags = {
+    environment = "dev"
+    costcenter  = "it"
+  }
+}
+
+```
+
+## Authors
+
+Originally created by [Vaijanath Angadihiremath](http://github.com/VaijanathB) and [Ivan Shaporov](http://github.com/Ivan-Shaporov)
+
+
 
 # Contributing
 

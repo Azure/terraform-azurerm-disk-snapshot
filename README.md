@@ -1,8 +1,9 @@
 # terraform-azurerm-disk-snapshot
 
 
-## Snapshot one or more managed disks 
-    This module helps create a disk backup by creating a snahpsot. You can also specify multiple disk names in the same resource group in a list format. 
+## Snapshot one or more managed disks
+
+This module helps create a disk backup by creating a snahpsot. You can also specify multiple disk names in the same resource group in a list format. 
 
 ## Usage
 

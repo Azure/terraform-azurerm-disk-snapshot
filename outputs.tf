@@ -7,3 +7,4 @@ output "snapshot_ids" {
 #   description = "The id of the newly created virtual network peering in on second virtual netowork. "
 #   value       = "${azurerm_virtual_network_peering.vnet_peer_2.id}"
 # }
+

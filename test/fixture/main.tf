@@ -21,7 +21,7 @@ module "disksnapshot" {
   source              = "../../"
   resource_group_name = "${azurerm_resource_group.rg.name}"
   version             = "1.0"
-  managed_disk_names  = ["disk-0", "disk-1"]  
+  managed_disk_names  = ["disk-0", "disk-1"]
 
   tags = {
     environment = "dev"

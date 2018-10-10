@@ -1,7 +1,9 @@
 # Pull the base image with given version.
-ARG BUILD_TERRAFORM_VERSION="0.11.7"
-FROM microsoft/terraform-test:${BUILD_TERRAFORM_VERSION}
+# ARG BUILD_TERRAFORM_VERSION="0.11.7"
+# FROM microsoft/terraform-test:${BUILD_TERRAFORM_VERSION}
+FROM microsoft/terraform-test:0.11.7
 
+ARG BUILD_TERRAFORM_VERSION="0.11.7"
 ARG MODULE_NAME="terraform-azurerm-disk-snapshot"
 
 # Declare default build configurations for terraform.
